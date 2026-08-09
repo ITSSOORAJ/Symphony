@@ -1,0 +1,6 @@
+{
+  "name": "Symphony Events - Kerala Event Management & Caterers",
+  "description": "Full-stack Kerala event management and catering platform featuring Wedding (Kalyanam), 28-Kett, Corporate events, Stage Decor, Sadya Catering, Booking System, Admin CMS, and PDF Invoice Generation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
