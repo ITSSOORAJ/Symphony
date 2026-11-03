@@ -17,12 +17,12 @@ export const generateInvoicePDF = (invoiceData: any): Promise<Buffer> => {
       doc.fillColor('#FFFFFF')
          .fontSize(22)
          .font('Helvetica-Bold')
-         .text('VANAMALI EVENTS KERALA', 40, 30, { characterSpacing: 1 });
+         .text('SYMPHONY EVENTS & CATERERS', 40, 30, { characterSpacing: 1 });
 
       doc.fontSize(10)
          .font('Helvetica')
          .fillColor('#fde68a')
-         .text('Traditional Elegance & Premium Event Management | Pan-Kerala Operations', 40, 58);
+         .text('Traditional Elegance & Premium Event Management | Kochi & Alappuzha Operations', 40, 58);
 
       doc.fontSize(16)
          .font('Helvetica-Bold')
@@ -105,12 +105,12 @@ export const generateInvoicePDF = (invoiceData: any): Promise<Buffer> => {
       const notesY = currentY + 110;
       doc.font('Helvetica-Bold').fontSize(10).fillColor('#064e3b').text('Terms & Payment Information:', 40, notesY);
       doc.font('Helvetica').fontSize(8.5).fillColor('#4b5563')
-         .text('1. Payment is accepted via UPI, NEFT/RTGS, or Bank Transfer to Vanamali Events account.', 40, notesY + 14)
+         .text('1. Payment is accepted via UPI, NEFT/RTGS, or Bank Transfer to Symphony Events account.', 40, notesY + 14)
          .text('2. 50% advance secures venue decoration slot, with remaining due on or before event date.', 40, notesY + 26)
-         .text(`3. Note: ${invoiceData.notes || 'Thank you for choosing Vanamali Events Kerala!'}`, 40, notesY + 38);
+         .text(`3. Note: ${invoiceData.notes || 'Thank you for choosing Symphony Events & Caterers!'}`, 40, notesY + 38);
 
       // Stamp / Signature Footer
-      doc.font('Helvetica-Bold').fontSize(9).fillColor('#111827').text('For Vanamali Events Kerala', doc.page.width - 200, notesY + 50, { align: 'center' });
+      doc.font('Helvetica-Bold').fontSize(9).fillColor('#111827').text('For Symphony Events & Caterers', doc.page.width - 200, notesY + 50, { align: 'center' });
       doc.font('Helvetica').fontSize(8).fillColor('#6b7280').text('Authorized Signatory', doc.page.width - 200, notesY + 70, { align: 'center' });
 
       doc.end();

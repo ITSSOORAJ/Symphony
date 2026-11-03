@@ -54,7 +54,7 @@ export const createBooking = async (req: Request, res: Response) => {
     // Trigger instant email receipt to client
     sendEmail({
       to: customerDetails.email,
-      subject: `Booking Request Received: ${eventType} - Vanamali Events Kerala`,
+      subject: `Booking Request Received: ${eventType} - Symphony Events & Caterers`,
       html: getBookingReceiptTemplate(createdBooking),
     }).catch(err => console.error('Background booking email error:', err));
 

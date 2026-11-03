@@ -31,7 +31,7 @@ const getTransporter = () => {
 
 export const sendEmail = async (options: EmailOptions): Promise<boolean> => {
   const transporter = getTransporter();
-  const from = process.env.SMTP_FROM || 'Vanamali Events Kerala <events@vanamalievents.com>';
+  const from = process.env.SMTP_FROM || 'Symphony Events & Caterers <events@symphonyevents.com>';
 
   if (transporter) {
     try {
@@ -65,19 +65,19 @@ export const getBookingReceiptTemplate = (booking: any) => {
   return `
     <div style="font-family: Arial, sans-serif; max-width: 650px; margin: 0 auto; border: 1px solid #e0d8cc; border-radius: 12px; overflow: hidden; background-color: #fff8f0;">
       <div style="background-color: #064e3b; padding: 24px; text-align: center; color: #ffffff;">
-        <h1 style="margin: 0; font-size: 26px; font-weight: bold; letter-spacing: 1px;">VANAMALI EVENTS KERALA</h1>
-        <p style="margin: 4px 0 0 0; font-size: 14px; color: #fde68a;">Traditional Elegance & Premium Event Management</p>
+        <h1 style="margin: 0; font-size: 26px; font-weight: bold; letter-spacing: 1px;">SYMPHONY EVENTS & CATERERS</h1>
+        <p style="margin: 4px 0 0 0; font-size: 14px; color: #fde68a;">Traditional Elegance & Premium Event Architecture</p>
       </div>
       <div style="padding: 32px; color: #1f2937;">
         <h2 style="color: #064e3b; margin-top: 0;">Namaskaram, ${booking.customerDetails.name}!</h2>
-        <p style="font-size: 15px; line-height: 1.6;">Thank you for choosing Vanamali Events for your upcoming <strong>${booking.eventType}</strong>. We have received your event booking request, and our event coordinator is reviewing your custom package.</p>
+        <p style="font-size: 15px; line-height: 1.6;">Thank you for choosing Symphony Events & Caterers for your upcoming <strong>${booking.eventType}</strong>. We have received your event booking request, and our event coordinator is reviewing your custom package.</p>
 
         <div style="background-color: #ffffff; padding: 20px; border-radius: 8px; border-left: 4px solid #d97706; margin: 24px 0;">
           <h3 style="margin-top: 0; color: #92400e; font-size: 16px;">Booking Summary</h3>
           <p style="margin: 6px 0; font-size: 14px;"><strong>Booking Reference:</strong> #${booking._id}</p>
           <p style="margin: 6px 0; font-size: 14px;"><strong>Event Type:</strong> ${booking.eventType}</p>
           <p style="margin: 6px 0; font-size: 14px;"><strong>Date:</strong> ${booking.eventDate}</p>
-          <p style="margin: 6px 0; font-size: 14px;"><strong>Location / District:</strong> ${booking.location}</p>
+          <p style="margin: 6px 0; font-size: 14px;"><strong>Location:</strong> ${booking.location}</p>
           <p style="margin: 6px 0; font-size: 14px;"><strong>Estimated Guests:</strong> ${booking.guestCount} guests</p>
           <p style="margin: 6px 0; font-size: 14px;"><strong>Services Selected:</strong> ${booking.selectedServices.join(', ')}</p>
           <p style="margin: 6px 0; font-size: 14px;"><strong>Status:</strong> <span style="display: inline-block; padding: 2px 10px; background-color: #fef3c7; color: #b45309; border-radius: 12px; font-weight: bold;">${booking.status}</span></p>
@@ -85,7 +85,7 @@ export const getBookingReceiptTemplate = (booking: any) => {
 
         <p style="font-size: 14px; line-height: 1.6;">Our team will reach out to you at <strong>${booking.customerDetails.phone}</strong> shortly to discuss stage design options, menu preferences, and event scheduling.</p>
 
-        <p style="margin-top: 32px; font-size: 14px; color: #4b5563;">Warm regards,<br><strong>Vanamali Event Operations Team</strong><br>Kochi | Thiruvananthapuram | Thrissur<br>Phone: +91 98470 12345</p>
+        <p style="margin-top: 32px; font-size: 14px; color: #4b5563;">Warm regards,<br><strong>Symphony Events Team</strong><br>Kochi & Alappuzha, Kerala<br>Phone: +91 98470 33413 / +91 97467 31970</p>
       </div>
     </div>
   `;
@@ -95,7 +95,7 @@ export const getInvoiceEmailTemplate = (invoice: any) => {
   return `
     <div style="font-family: Arial, sans-serif; max-width: 650px; margin: 0 auto; border: 1px solid #d1d5db; border-radius: 12px; overflow: hidden; background-color: #ffffff;">
       <div style="background-color: #064e3b; padding: 24px; color: #ffffff;">
-        <h1 style="margin: 0; font-size: 24px;">VANAMALI EVENTS KERALA</h1>
+        <h1 style="margin: 0; font-size: 24px;">SYMPHONY EVENTS & CATERERS</h1>
         <p style="margin: 4px 0 0 0; color: #fde68a; font-size: 14px;">Official Event Bill & Invoice - #${invoice.invoiceNumber}</p>
       </div>
       <div style="padding: 28px; color: #1f2937;">
@@ -129,7 +129,7 @@ export const getInvoiceEmailTemplate = (invoice: any) => {
 
         <p style="margin-top: 24px; font-size: 14px; color: #6b7280;">A formal PDF copy is attached to this email for your accounting records.</p>
 
-        <p style="margin-top: 32px; font-size: 14px; color: #4b5563;">Warm regards,<br><strong>Accounts & Finance Dept</strong><br>Vanamali Events Kerala</p>
+        <p style="margin-top: 32px; font-size: 14px; color: #4b5563;">Warm regards,<br><strong>Accounts & Finance Dept</strong><br>Symphony Events & Caterers Kerala</p>
       </div>
     </div>
   `;

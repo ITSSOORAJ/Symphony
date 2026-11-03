@@ -96,11 +96,11 @@ export const createInvoice = async (req: Request, res: Response) => {
         const pdfBuffer = await generateInvoicePDF(createdInvoice);
         await sendEmail({
           to: customerEmail,
-          subject: `Invoice & Approval Confirmed: ${invoiceNumber} - Vanamali Events Kerala`,
+          subject: `Invoice & Approval Confirmed: ${invoiceNumber} - Symphony Events & Caterers`,
           html: getInvoiceEmailTemplate(createdInvoice),
           attachments: [
             {
-              filename: `${invoiceNumber}_Invoice_Vanamali.pdf`,
+              filename: `${invoiceNumber}_Invoice_Symphony.pdf`,
               content: pdfBuffer,
               contentType: 'application/pdf',
             },
@@ -158,7 +158,7 @@ export const downloadInvoicePDF = async (req: Request, res: Response) => {
     const pdfBuffer = await generateInvoicePDF(invoiceData);
 
     res.setHeader('Content-Type', 'application/pdf');
-    res.setHeader('Content-Disposition', `attachment; filename=${invoiceData.invoiceNumber}_Vanamali.pdf`);
+    res.setHeader('Content-Disposition', `attachment; filename=${invoiceData.invoiceNumber}_Symphony.pdf`);
     return res.send(pdfBuffer);
   } catch (error: any) {
     return res.status(500).json({ success: false, message: error.message });
@@ -184,11 +184,11 @@ export const emailInvoice = async (req: Request, res: Response) => {
     const pdfBuffer = await generateInvoicePDF(invoiceData);
     await sendEmail({
       to: invoiceData.customerEmail,
-      subject: `Official Event Bill #${invoiceData.invoiceNumber} - Vanamali Events Kerala`,
+      subject: `Official Event Bill #${invoiceData.invoiceNumber} - Symphony Events & Caterers`,
       html: getInvoiceEmailTemplate(invoiceData),
       attachments: [
         {
-          filename: `${invoiceData.invoiceNumber}_Vanamali.pdf`,
+          filename: `${invoiceData.invoiceNumber}_Symphony.pdf`,
           content: pdfBuffer,
           contentType: 'application/pdf',
         },

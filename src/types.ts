@@ -1,20 +1,9 @@
 export type EventType = 'Kalyanam (Wedding)' | '28-Kett (Naming)' | 'Corporate Party' | 'Office Event' | 'Birthday Party' | 'Custom Event';
 
 export type KeralaDistrict = 
-  | 'Thiruvananthapuram'
-  | 'Kollam'
-  | 'Pathanamthitta'
+  | 'Kochi (Ernakulam)'
   | 'Alappuzha'
-  | 'Kottayam'
-  | 'Idukki'
-  | 'Ernakulam (Kochi)'
-  | 'Thrissur'
-  | 'Palakkad'
-  | 'Malappuram'
-  | 'Kozhikode'
-  | 'Wayanad'
-  | 'Kannur'
-  | 'Kasaragod';
+  | string;
 
 export type ServiceOption = 
   | 'Stage Decoration & Floral'

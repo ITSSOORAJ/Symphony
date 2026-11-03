@@ -12,7 +12,7 @@ export const Navbar: React.FC = () => {
   const isActive = (path: string) => location.pathname === path;
 
   const navLinks = [
-    { name: 'Dashboard', path: '/', icon: Sparkles },
+    { name: 'Home', path: '/', icon: Sparkles },
     { name: 'Gallery Showcase', path: '/gallery', icon: ImageIcon },
     { name: 'Book Event', path: '/book', icon: Calendar },
     { name: 'Contact Us', path: '/contact', icon: PhoneCall },

@@ -13,11 +13,11 @@ export const Footer: React.FC = () => {
           <div className="space-y-4">
             <SymphonyLogo showText size="lg" />
             <p className="text-xs leading-relaxed text-white/60">
-              Kerala&apos;s premier event management and catering company specializing in authentic Kalyanam (Weddings), 28-Kett (Naming Ceremonies), Luxury Stage Decors, Traditional Ila Sadya Catering, and Corporate Galas across all districts.
+              Kerala&apos;s premier event management and catering company specializing in authentic Kalyanam (Weddings), 28-Kett (Naming Ceremonies), Luxury Stage Decors, Traditional Ila Sadya Catering, and Corporate Galas across Kochi and Alappuzha.
             </p>
             <div className="flex items-center gap-2 text-xs text-[#D4AF37] bg-white/5 p-2.5 rounded-xl border border-white/10">
               <Award className="w-4 h-4 text-[#D4AF37] shrink-0" />
-              <span>Premier Event & Catering Architects Kerala 2025</span>
+              <span>Premier Event & Catering Architects Kerala</span>
             </div>
           </div>
 
@@ -36,24 +36,20 @@ export const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* Col 3: Kerala Districts Served */}
+          {/* Col 3: Service Locations */}
           <div>
             <h4 className="text-sm font-bold text-white serif mb-4 flex items-center gap-2">
-              <MapPin className="w-3.5 h-3.5 text-[#D4AF37]" /> Pan-Kerala Locations
+              <MapPin className="w-3.5 h-3.5 text-[#D4AF37]" /> Service Locations
             </h4>
-            <div className="grid grid-cols-2 gap-x-2 gap-y-1.5 text-xs text-white/50">
-              <span>Ernakulam (Kochi)</span>
-              <span>Thiruvananthapuram</span>
-              <span>Thrissur</span>
-              <span>Kozhikode</span>
-              <span>Kottayam</span>
-              <span>Alappuzha</span>
-              <span>Kollam</span>
-              <span>Palakkad</span>
-              <span>Malappuram</span>
-              <span>Kannur</span>
-              <span>Idukki & Munnar</span>
-              <span>Wayanad</span>
+            <div className="space-y-3 text-xs text-white/70">
+              <div className="p-2.5 rounded-xl bg-white/5 border border-white/10">
+                <span className="font-bold text-[#D4AF37] block text-xs">Kochi</span>
+                <span className="text-[11px] text-white/60">Ernakulam, Kakkanad, Fort Kochi & Suburbs</span>
+              </div>
+              <div className="p-2.5 rounded-xl bg-white/5 border border-white/10">
+                <span className="font-bold text-[#D4AF37] block text-xs">Alappuzha</span>
+                <span className="text-[11px] text-white/60">Panavally, Cherthala, Town & Lake Resorts</span>
+              </div>
             </div>
           </div>
 

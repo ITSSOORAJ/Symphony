@@ -94,7 +94,7 @@ export const HomePage: React.FC = () => {
           <div className="relative z-10 max-w-3xl space-y-6">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#D4AF37]/10 border border-[#D4AF37]/30 text-[#D4AF37] text-xs font-semibold tracking-wider uppercase">
               <Flower2 className="w-3.5 h-3.5 text-[#D4AF37] animate-spin" />
-              <span>Pan-Kerala Event Architects</span>
+              <span>Kochi & Alappuzha Event Architects</span>
             </div>
 
             <h1 className="text-4xl sm:text-6xl font-bold serif text-white tracking-tight leading-tight">
@@ -102,7 +102,7 @@ export const HomePage: React.FC = () => {
             </h1>
 
             <p className="text-sm sm:text-base text-white/70 font-light leading-relaxed">
-              From regal Kasavu Kalyanam mandapams and authentic 28-item Ila Sadya banquets to intimate 28-Kett baby naming ceremonies and high-tech corporate galas across Kochi, Trivandrum, Thrissur & all 14 districts.
+              From regal Kasavu Kalyanam mandapams and authentic 28-item Ila Sadya banquets to intimate 28-Kett baby naming ceremonies and high-tech corporate galas across Kochi and Alappuzha.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center gap-4 pt-2">
@@ -131,7 +131,7 @@ export const HomePage: React.FC = () => {
             <span className="text-xs uppercase font-bold tracking-wider text-white/40">Hosted Events</span>
             <div className="mt-4">
               <p className="text-3xl font-bold serif gold-text">1,200+</p>
-              <p className="text-[11px] text-white/60 mt-1">Across 14 Kerala Districts</p>
+              <p className="text-[11px] text-white/60 mt-1">Across Kochi & Alappuzha</p>
             </div>
           </div>
 

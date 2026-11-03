@@ -11,7 +11,7 @@ export const BookingPage: React.FC = () => {
 
   // Form State
   const [eventType, setEventType] = useState<EventType>('Kalyanam (Wedding)');
-  const [location, setLocation] = useState<KeralaDistrict>('Ernakulam (Kochi)');
+  const [location, setLocation] = useState<KeralaDistrict>('Kochi (Ernakulam)');
   const [customLocation, setCustomLocation] = useState('');
   const [eventDate, setEventDate] = useState('');
   const [guestCount, setGuestCount] = useState<number>(500);
@@ -38,20 +38,8 @@ export const BookingPage: React.FC = () => {
   ];
 
   const districtsList: KeralaDistrict[] = [
-    'Ernakulam (Kochi)',
-    'Thiruvananthapuram',
-    'Thrissur',
-    'Kozhikode',
-    'Kottayam',
+    'Kochi (Ernakulam)',
     'Alappuzha',
-    'Kollam',
-    'Palakkad',
-    'Malappuram',
-    'Kannur',
-    'Idukki',
-    'Wayanad',
-    'Pathanamthitta',
-    'Kasaragod',
   ];
 
   const servicesList: ServiceOption[] = [
@@ -183,10 +171,10 @@ export const BookingPage: React.FC = () => {
                 </div>
               </div>
 
-              {/* Kerala District & Specific Venue */}
+              {/* Kerala Location & Specific Venue */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-xs font-bold text-amber-200 uppercase tracking-wider mb-2">Kerala District / Region</label>
+                  <label className="block text-xs font-bold text-amber-200 uppercase tracking-wider mb-2">Location (Kochi / Alappuzha)</label>
                   <select
                     value={location}
                     onChange={(e) => setLocation(e.target.value as KeralaDistrict)}

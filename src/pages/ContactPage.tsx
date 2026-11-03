@@ -56,30 +56,22 @@ export const ContactPage: React.FC = () => {
           {/* Left Column: Contact Offices & Details */}
           <div className="space-y-8">
             <div className="p-8 rounded-3xl bg-emerald-900/30 border border-amber-500/20 shadow-xl space-y-6">
-              <h3 className="text-2xl font-serif font-bold text-amber-300">Kerala Regional Offices</h3>
+              <h3 className="text-2xl font-serif font-bold text-amber-300">Offices & Locations</h3>
               
               <div className="space-y-4 text-sm text-amber-100/80">
                 <div className="flex items-start gap-3">
                   <MapPin className="w-5 h-5 text-amber-400 shrink-0 mt-1" />
                   <div>
-                    <strong className="text-amber-200 block text-base">Main HQ (Panavally)</strong>
-                    <p className="text-xs text-amber-100/70">Off: Panavally, Cherthala, Alappuzha / Ernakulam - 688526</p>
+                    <strong className="text-amber-200 block text-base">Alappuzha Main HQ</strong>
+                    <p className="text-xs text-amber-100/70">Off: Panavally, Cherthala, Alappuzha - 688526</p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-3">
                   <MapPin className="w-5 h-5 text-amber-400 shrink-0 mt-1" />
                   <div>
-                    <strong className="text-amber-200 block text-base">Kochi & Ernakulam Service Office</strong>
+                    <strong className="text-amber-200 block text-base">Kochi Operations Office</strong>
                     <p className="text-xs text-amber-100/70">MG Road & Panampilly Nagar, Kochi, Ernakulam</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-3">
-                  <MapPin className="w-5 h-5 text-amber-400 shrink-0 mt-1" />
-                  <div>
-                    <strong className="text-amber-200 block text-base">Thrissur & Trivandrum Regional Branches</strong>
-                    <p className="text-xs text-amber-100/70">Pan-Kerala Event Architecture & Catering Network</p>
                   </div>
                 </div>
               </div>
